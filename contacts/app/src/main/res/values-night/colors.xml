@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_list_back">#FF000000</color>
+    <color name="main_list_text">#FFFFFFFF</color>
+    <color name="list_view_text">#FFFFFFFF</color>
+    <color name="list_view_contact_text">#B8A1A1</color>
+    <color name="edit_contact_back">#FF000000</color>
+    <color name="edit_contact_box">#356DB5</color>
+    <color name="edit_contact_text">#FFFFFFFF</color>
+    <color name="edit_contact_icon">#FF000000</color>
+    <color name="edit_contact_head">#6E3131</color>
+
+</resources>
