@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ContactDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/edit_contact_back"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/contact_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:onClick="uploadImage"
+                android:src="@drawable/ic_image_add"></ImageButton>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/contactTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#E45151"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/edit_contact_box">
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="15dp"
+                android:hint="Full Name"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/edit_contact_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/edit_contact_box">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                android:drawablePadding="15dp"
+                android:gravity="center_vertical"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/edit_contact_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/edit_contact_box">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawablePadding="7dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/edit_contact_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundColor="@color/edit_contact_box">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/companyInfoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_dialog_dialer"
+                android:drawablePadding="5dp"
+                android:hint="Company Info"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/edit_contact_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
